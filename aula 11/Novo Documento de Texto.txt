@@ -1,0 +1,8 @@
+for morador in lista_moradores:
+    # Verificar se alguma parte do texto capturado (placa) corresponde a parte do morador
+    if any(placa in morador for placa in tesxto_capturado.split()):
+        print("PLACA VERIFICADA:", morador)
+        break
+else:
+    print("Placa não encontrada na lista de moradores.")
+
